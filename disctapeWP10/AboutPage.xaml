@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="disctape.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:disctape"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+        
+        
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="ABOUT" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <Grid>
+                <!-- This is for showing icon in the header line
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>-->
+                <TextBlock Grid.Column="0" Text="Disctape" Margin="0,-6.5,0,16.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+                <!--<Image Grid.Column="1" Width="71" Margin="0,-20,0,0" Source="Assets/AboutPageLogo.png" /> -->
+            </Grid>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+
+        <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,0,19,0">
+            <ScrollViewer.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Assets/MainPageBackground.png"/>
+            </ScrollViewer.Background>
+            
+            <StackPanel>
+                <TextBlock Text="Developer: Markus Jaakola" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18" />
+                <StackPanel Orientation="Horizontal"  Margin="0,0,0,24">
+                    <TextBlock Text="Version:" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                    <TextBlock x:Name="versionNr" Text="" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                </StackPanel>
+                <TextBlock Text="Using the app" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="Set start position when standing in the position where you want to start measuring the distance. When start position is set, just move forward and the distance will be shown as you move." 
+                           Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12"/> 
+                <TextBlock Text="The application works best outside on an open field. It might not be used inside, because the GPS signal is not accurate enough inside buildings. Please note that high buildings, trees, location, weather, etc. may affect the results. Minimum displayed distance is ten meters (33ft)." 
+                           Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
+                <TextBlock Text="Result accuracy" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18" />
+                <TextBlock Text="good" Style="{ThemeResource BodyTextBlockStyle}" Foreground="LimeGreen" FontWeight="Bold"  />
+                <TextBlock Text="Error is usually a couple of meters." Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
+                <TextBlock Text="okay" Style="{ThemeResource BodyTextBlockStyle}" Foreground="Orange" FontWeight="Bold" />
+                <TextBlock Text="Error might be up to ten meters." Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
+                <TextBlock Text="poor" Style="{ThemeResource BodyTextBlockStyle}" Foreground="Red"  FontWeight="Bold"/>
+                <TextBlock Text="Error can be over ten meters." Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12"/>
+                <TextBlock Text="Your privacy" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="This app uses your device's location only to display distances on your screen." 
+                           Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
+                <TextBlock Text="Distance record" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="The flying disc distance world record was set to 263.2m/863.5ft by Simon Lizotte in October 2014. The disc he used was a 157-gram Blizzard Champion Boss." 
+                           Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,0" />
+
+                <TextBlock Name="distanceTips" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12">
+                
+                    <Hyperlink NavigateUri="https://youtu.be/eOMpSTclWfA">
+                        <Run Text="Watch Simon's distance tips from Youtube." />
+                    </Hyperlink>
+                
+                </TextBlock>
+                
+                <TextBlock Text="Feedback" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="Feedback is appreciated. If you like the app, please send your love by rating and reviewing :)" 
+                           Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,36" />
+                <Button Content="Send Feedback" Click="SendFeedback_Button_Click" Margin="0,0,0,24"/>
+                <Button Content="Send Love" Click="SendLove_Button_Click" Margin="0,0,0,95" />
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
