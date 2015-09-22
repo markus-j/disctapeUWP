@@ -44,27 +44,27 @@
             </ScrollViewer.Background>
             
             <StackPanel>
-                <TextBlock Text="Developer: Markus Jaakola" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18" />
+                <TextBlock Text="Developer: Markus Jaakola" Style="{ThemeResource SubtitleTextBlockStyle}" />
                 <StackPanel Orientation="Horizontal"  Margin="0,0,0,24">
-                    <TextBlock Text="Version:" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
-                    <TextBlock x:Name="versionNr" Text="" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                    <TextBlock Text="Version:" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                    <TextBlock x:Name="versionNr" Text="" Style="{ThemeResource SubtitleTextBlockStyle}" />
                 </StackPanel>
-                <TextBlock Text="Using the app" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="Using the app" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}"/>
                 <TextBlock Text="Set start position when standing in the position where you want to start measuring the distance. When start position is set, just move forward and the distance will be shown as you move." 
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12"/> 
                 <TextBlock Text="The application works best outside on an open field. It might not be used inside, because the GPS signal is not accurate enough inside buildings. Please note that high buildings, trees, location, weather, etc. may affect the results. Minimum displayed distance is ten meters (33ft)." 
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
-                <TextBlock Text="Result accuracy" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18" />
+                <TextBlock Text="Result accuracy" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" />
                 <TextBlock Text="good" Style="{ThemeResource BodyTextBlockStyle}" Foreground="LimeGreen" FontWeight="Bold"  />
                 <TextBlock Text="Error is usually a couple of meters." Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
                 <TextBlock Text="okay" Style="{ThemeResource BodyTextBlockStyle}" Foreground="Orange" FontWeight="Bold" />
                 <TextBlock Text="Error might be up to ten meters." Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
                 <TextBlock Text="poor" Style="{ThemeResource BodyTextBlockStyle}" Foreground="Red"  FontWeight="Bold"/>
                 <TextBlock Text="Error can be over ten meters." Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12"/>
-                <TextBlock Text="Your privacy" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="Your privacy" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" />
                 <TextBlock Text="This app uses your device's location only to display distances on your screen." 
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
-                <TextBlock Text="Distance record" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+                <TextBlock Text="Distance record" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" />
                 <TextBlock Text="The flying disc distance world record was set to 263.2m/863.5ft by Simon Lizotte in October 2014. The disc he used was a 157-gram Blizzard Champion Boss." 
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,0" />
 
@@ -75,8 +75,8 @@
                     </Hyperlink>
                 
                 </TextBlock>
-                
-                <TextBlock Text="Feedback" Style="{ThemeResource TitleTextBlockStyle}" FontSize="18"/>
+
+                <TextBlock Text="Feedback" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" />
                 <TextBlock Text="Feedback is appreciated. If you like the app, please send your love by rating and reviewing :)" 
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,36" />
                 <Button Content="Send Feedback" Click="SendFeedback_Button_Click" Margin="0,0,0,24"/>

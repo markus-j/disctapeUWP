@@ -32,7 +32,7 @@
 
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
-                <TextBlock Text="Display unit" Style="{ThemeResource CaptionTextBlockStyle}" />
+                <TextBlock Text="Display unit" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" />
                 <RadioButton x:Name="radiobtn_meters" Content="Meters" Checked="RadioButton_Checked" GroupName="Unit" />
                 <RadioButton x:Name="radiobtn_feet" Content="Feet" Checked="RadioButton_Checked" GroupName="Unit"/>
                 <RadioButton x:Name="radiobtn_meters_and_feet" Visibility="Collapsed" Content="Meters and Feet" Checked="RadioButton_Checked" GroupName="Unit"/>
