@@ -384,7 +384,7 @@ namespace disctapeWP10
             }
         }
 
-        // calculate weighed average from the three points
+        // calculate weighted average from the three points
         private void calculateStartLocation()
         {
             double p1_acc = start_position1.Coordinate.Accuracy;

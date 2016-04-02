@@ -35,9 +35,6 @@
                 <!--<Image Grid.Column="1" Width="71" Margin="0,-20,0,0" Source="Assets/AboutPageLogo.png" /> -->
             </Grid>
         </StackPanel>
-
-        <!--TODO: Content should be placed within the following grid-->
-
         <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,0,19,0">
             <ScrollViewer.Background>
                 <ImageBrush Stretch="Uniform" ImageSource="Assets/MainPageBackground.png"/>
@@ -65,9 +62,10 @@
                 <TextBlock Text="This app uses your device's location only to display distances on your screen." 
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
                 <TextBlock Text="Distance record" Style="{ThemeResource SubtitleTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" />
-                <TextBlock Text="The flying disc distance world record was set to 263.2m/863.5ft by Simon Lizotte in October 2014. The disc he used was a 157-gram Blizzard Champion Boss." 
+                <TextBlock Text="The flying disc distance world record was set to 263.2m/863.5ft by Simon Lizotte in October 2014. The disc he used was a 157-gram Blizzard Champion Boss."
+                           Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12" />
+                <TextBlock Text="In March 2016, David Wiggins Jr. reset the record to 338m/1109ft with a 154 gram R-Pro Boss."
                            Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,0" />
-
                 <TextBlock Name="distanceTips" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,0,12">
                 
                     <Hyperlink NavigateUri="https://youtu.be/eOMpSTclWfA">

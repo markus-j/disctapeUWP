@@ -20,8 +20,8 @@
     <PackageCertificateKeyFile>disctapeWP10_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
-    <PackageCertificateThumbprint>883357065A90930AF20791765FAC4E1BC1F5ECFC</PackageCertificateThumbprint>
-    <AppxPackageDir>C:\Users\t-majaak\OneDrive\koodi\disctape\disctapeWP10\disctapeWP10\</AppxPackageDir>
+    <PackageCertificateThumbprint>2B37A4BFF1A93AC9B8CAE859044C5E9C0D9C5960</PackageCertificateThumbprint>
+    <AppxPackageDir>C:\Users\Markus\Source\Repos\disctapeUWP\disctapeWP10\</AppxPackageDir>
     <AppxBundle>Never</AppxBundle>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
